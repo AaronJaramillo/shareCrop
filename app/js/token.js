@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
   $('#tokenAddy button').click(function() {
-	Token.ownerBalance().then(function(balance){
+	Token.balanceOf(0x1418AB7673625CB50Fd8A35Df91635a94fdF4bC9).then(function(balance){
 		balance = balance - 580;
 		$('#tokenAddy .results').html(balance.toString());
   	});
