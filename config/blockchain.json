@@ -22,7 +22,7 @@
     "rpcPort": 8545,
     "rpcCorsDomain": "http://localhost:8000",
     "account": {
-      "password": "config/testnet/password"
+      "password": ""
     }
   },
   "livenet": {
@@ -33,7 +33,7 @@
     "rpcPort": 8545,
     "rpcCorsDomain": "http://localhost:8000",
     "account": {
-      "password": "config/livenet/password"
+      "password": "wutang"
     }
   },
   "privatenet": {
