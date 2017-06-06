@@ -2,15 +2,13 @@
   "default": {
     "gas": "auto",
     "contracts": {
-        "ICO": {
-            "args": [
-                3000
-            ]
+        "Token": {
+            "address": "0x504C4Ed09aB2bB27093d723b3AF17ce3f5083633",
+            "instanceOf": "Token"
         },
-    	"Token": {
-    		"args": [
-    			1000
-    		]
+    	"ICO": {
+    		"address": "0x504C4Ed09aB2bB27093d723b3AF17ce3f5083633",
+            "instanceOf": "ICO"
     	}
     }
   }

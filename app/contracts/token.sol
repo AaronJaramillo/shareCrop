@@ -112,18 +112,17 @@ contract Token is ERC20Interface {
 contract ICO {
 	address benificiary;
 	uint public price;
-	Token public tokenReward;
+	ERC20Interface public tokenReward;
 	mapping(address => uint256) public balanceOf;
 	event FundTransfer(address backer, uint amount, bool isContribution);
 
 	function ICO(
-		address grower,
-		uint tokenPrice,
-		Token tokenAddress){
+		address tokenAddress,
+    uint tokensPerEth){
 
 		benificiary = msg.sender;
-		price = tokenPrice * 1 ether;
-		tokenReward = Token(tokenAddress);
+		price = tokensPerEth * 1 ether;
+		tokenReward = ERC20Interface(tokenAddress);
 	}
 	function () payable {
 		uint amount = msg.value;
