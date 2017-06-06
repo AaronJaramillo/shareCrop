@@ -3,12 +3,10 @@
     "gas": "auto",
     "contracts": {
         "Token": {
-            "address": "0x504C4Ed09aB2bB27093d723b3AF17ce3f5083633",
-            "instanceOf": "Token"
+            "address": "0x504C4Ed09aB2bB27093d723b3AF17ce3f5083633"
         },
     	"ICO": {
-    		"address": "0xeDe2CC1c49D85fD649C82B26F587aCEe2081e670",
-            "instanceOf": "ICO"
+    		"address": "0xeDe2CC1c49D85fD649C82B26F587aCEe2081e670"
     	}
     }
   }
