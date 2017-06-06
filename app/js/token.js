@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
   $('#tokenAddy button').click(function() {
-	Token.balanceOf(0x1418AB7673625CB50Fd8A35Df91635a94fdF4bC9).then(function(balance){
+	Token.ownerBalance().then(function(balance){
 		balance = balance - 580;
 		$('#tokenAddy .results').html(balance.toString());
   	});
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	//         elText.focus();
 	//         return;
 	//     }
-	    
+	    c
 	//     qrcode.makeCode(elText);
 	// }
 
